@@ -1,0 +1,340 @@
+{
+    "project_info": {
+        "name": "Mansi Gole Portfolio",
+        "persona": "Engineering Student & Aspiring Full-Stack / Backend / Web3 Engineer",
+        "institution": "SIES Graduate School of Technology (SIESGST), Navi Mumbai",
+        "target_roles": "Software Engineer, Full-Stack Developer, Web3 / Distributed Systems Engineer"
+    },
+    "typography": {
+        "heading_font": "Space Grotesk, sans-serif",
+        "body_font": "Inter, sans-serif",
+        "mono_font": "JetBrains Mono, Fira Code, monospace",
+        "google_fonts_import": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap",
+        "sizes": {
+            "hero_title": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F7F2F5]",
+            "section_title": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#F7F2F5]",
+            "subsection_title": "text-xl sm:text-2xl font-semibold text-[#F7F2F5]",
+            "card_title": "text-lg sm:text-xl font-medium text-[#F7F2F5]",
+            "body": "text-base text-[#B9AFBE] leading-relaxed",
+            "body_small": "text-sm text-[#918697] leading-normal",
+            "tech_label": "text-xs font-mono uppercase tracking-widest text-[#E9A6A6]"
+        }
+    },
+    "colors": {
+        "main_background": "#171624",
+        "midnight_plum": "#1F1D36",
+        "deep_plum": "#3F3351",
+        "muted_mauve": "#864879",
+        "dusty_rose": "#E9A6A6",
+        "card_background": "#292538",
+        "secondary_surface": "#342D40",
+        "text_primary": "#F7F2F5",
+        "text_secondary": "#B9AFBE",
+        "text_muted": "#918697",
+        "borders": "#494052",
+        "hover_accent": "#E9A6A6",
+        "palette_roles": {
+            "accent_usage": "Dusty Rose (#E9A6A6) MUST be used sparingly as a controlled accent for subtle borders, active indicators, hover highlights, and call-to-action focuses.",
+            "cards": "Use #292538 with 1px border #494052 and subtle hover bg transition to #342D40.",
+            "background_theme": "Dark, distraction-free, elegant #171624. Avoid excessive gradients, neon, or busy particles."
+        }
+    },
+    "visual_enhancers": {
+        "borders": "1px solid #494052",
+        "hover_border": "1px solid #E9A6A6",
+        "card_radius": "rounded-xl",
+        "button_radius": "rounded-lg",
+        "badge_radius": "rounded-md",
+        "shadows": {
+            "card_subtle": "shadow-lg shadow-black/20",
+            "accent_glow": "shadow-[0_0_20px_rgba(233,166,166,0.12)]",
+            "spotlight": "radial-gradient(600px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(233, 166, 166, 0.08), transparent 40%)"
+        },
+        "effects": {
+            "glassmorphism_nav": "bg-[#171624]/85 backdrop-blur-md border-b border-[#494052]",
+            "motion_reveals": "Framer motion fade-up with y: 20 -> y: 0, opacity: 0 -> 1, duration: 0.5s",
+            "icon_style": "Monochrome or plum tint (#B9AFBE / #E9A6A6). Strictly NO emoji icons."
+        }
+    },
+    "image_urls": {
+        "flagship_projects": {
+            "unidata": {
+                "url": "https://images.unsplash.com/photo-1786785712665-bb11ca2f0117?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NxY2NjV8MHwxfHNlYXJjaHwyfHxibG9ja2NoYWluJTIwZGF0YSUyMG5ldHdvcmslMjBmdXR1cmlzdGljJTIwZGFyayUyMGFic3RyYWN0fGVufDB8fHx8MTc5MzM5MTI3NHww&ixlib=rb-4.1.0&q=85",
+                "alt": "UniData - Blockchain Powered Dataset Marketplace Network",
+                "category": "Blockchain / Decentralized Data"
+            },
+            "neural_ledger": {
+                "url": "https://images.unsplash.com/photo-1759661881353-5b9cc55e1cf4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxzZXJ2ZXIlMjBhcmNoaXRlY3R1cmUlMjBkYXRhJTIwcHJvY2Vzc2luZyUyMGRhcmslMjB0ZXJtaW5hbHxlbnwwfHx8fDE3OTMzOTE3NzR8MA&ixlib=rb-4.1.0&q=85",
+                "alt": "Neural Ledger - Webhook Processing Engine",
+                "category": "Backend System & Queue Processing"
+            },
+            "nyx_equities": {
+                "url": "https://images.unsplash.com/photo-1760548425425-e42e77fa38f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjB0cmFkaW5nJTIwY2hhcnQlMjBkYXJrJTIwaW50ZXJmYWNlJTIwc2NyZWVufGVufDB8fHx8MTc5MzM5MTI3NHww&ixlib=rb-4.1.0&q=85",
+                "alt": "NyxEquities - Tokenized Equities Terminal",
+                "category": "Fintech & Trading Terminal"
+            }
+        },
+        "profile_placeholder": {
+            "url": "https://images.unsplash.com/photo-1775994121064-e75fa6f3e84c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxzZXJ2ZXIlMjBhcmNoaXRlY3R1cmUlMjBkYXRhJTIwcHJvY2Vzc2luZyUyMGRhcmslMjB0ZXJtaW5hbHxlbnwwfHx8fDE3OTMzOTEyNzR8MA&ixlib=rb-4.1.0&q=85",
+            "alt": "Mansi Gole Avatar Graphic / Visual",
+            "category": "Developer Editorial Graphic"
+        }
+    },
+    "sections": [
+        {
+            "id": "nav",
+            "name": "Navigation Bar",
+            "type": "Sticky Header",
+            "features": [
+                "MG. editorial wordmark on left",
+                "Links: About, Skills, Projects, Experience, Hackathons, Contact",
+                "Active scroll section highlighting",
+                "Download Resume button",
+                "Mobile responsive drawer menu with backdrop blur"
+            ]
+        },
+        {
+            "id": "hero",
+            "name": "Hero Section",
+            "type": "Minimal Editorial",
+            "features": [
+                "Concise headline: 'Engineering ideas into meaningful digital experiences.'",
+                "Mansi Gole name & intro badge: 3rd-year ECS Engineering Student @ SIESGST, Navi Mumbai",
+                "Focus areas: Full-stack development, Backend engineering, Web3 & Distributed systems",
+                "Primary CTAs: 'View Flagship Projects' & 'Download Resume'",
+                "Social links: GitHub, LinkedIn, Email, X/Twitter",
+                "Editorial profile visual treatment (Dusty Rose accented photo placeholder)"
+            ]
+        },
+        {
+            "id": "about",
+            "name": "About & Technical Snapshot",
+            "type": "Grid & Cards",
+            "features": [
+                "Engineering narrative & problem-solving philosophy",
+                "Snapshot cards: Degree & College (SIESGST ECS '26), Core Domain, Leadership Roles",
+                "Key stats (Projects completed, Hackathons won/participated, Event attendees managed)"
+            ]
+        },
+        {
+            "id": "skills",
+            "name": "Technical Skills",
+            "type": "Categorized Grid",
+            "categories": [
+                "Languages: C++, Python, JavaScript (ES6+), TypeScript, Go, Solidity, SQL",
+                "Backend & Systems: Node.js, Express, Go/Gin, WebSockets, REST APIs, Microservices, RabbitMQ, Redis",
+                "Frontend & UI: React.js, Next.js, Tailwind CSS, Redux Toolkit, Framer Motion, HTML5/CSS3",
+                "Web3 & Blockchain: Ethereum, Solidity, Hardhat, Ethers.js, Web3.js, IPFS, Smart Contract Security",
+                "Databases & Cloud: PostgreSQL, MongoDB, Docker, Git/GitHub, Linux, Postman, Vercel"
+            ]
+        },
+        {
+            "id": "flagship-projects",
+            "name": "Flagship Projects",
+            "type": "Magic Bento / Spotlight Grid",
+            "projects": [
+                {
+                    "name": "UniData",
+                    "tagline": "Blockchain-Powered Dataset Marketplace",
+                    "stack": [
+                        "Solidity",
+                        "Ethereum",
+                        "IPFS",
+                        "React",
+                        "Node.js",
+                        "Ethers.js"
+                    ],
+                    "description": "Decentralized marketplace enabling secure, verifiable data trading with smart-contract automated escrow and IPFS content addressable storage.",
+                    "modal_details": {
+                        "overview": "UniData bridges AI researchers and data providers through trustless blockchain transactions.",
+                        "problem": "Traditional data marketplaces suffer from high platform fees, centralized data censorship, and lack of verifiable provenance.",
+                        "architecture": "Smart contracts handle dataset tokenization & escrow. File metadata is cryptographically pinned on IPFS with encryption keys delivered post-payment.",
+                        "challenges": "Gas optimization for bulk dataset purchases and handling asymmetric key exchange on-chain."
+                    }
+                },
+                {
+                    "name": "Neural-Ledger",
+                    "tagline": "Self-Healing Webhook Reconciliation Engine",
+                    "stack": [
+                        "Go",
+                        "Redis",
+                        "RabbitMQ",
+                        "PostgreSQL",
+                        "Docker",
+                        "REST API"
+                    ],
+                    "description": "High-throughput backend engine that automatically detects, retries, and reconciles out-of-order or failed webhooks across distributed microservices.",
+                    "modal_details": {
+                        "overview": "Designed to guarantee eventual consistency and zero data loss for critical transactional events.",
+                        "problem": "Third-party webhook failures and network partitions often lead to state drift between payment gateways and internal systems.",
+                        "architecture": "Distributed dead-letter queue with exponential backoff algorithm, state reconciliation daemon, and real-time observability dashboard.",
+                        "challenges": "Preventing duplicate processing during network recovery using idempotent key tracking in Redis."
+                    }
+                },
+                {
+                    "name": "NyxEquities",
+                    "tagline": "Tokenized Equities & Off-Hours Execution Terminal",
+                    "stack": [
+                        "TypeScript",
+                        "Next.js",
+                        "Web3.js",
+                        "Rust / Anchor",
+                        "WebSockets",
+                        "Tailwind"
+                    ],
+                    "description": "Next-gen trading interface for 24/7 tokenized asset execution, featuring real-time orderbooks and synthetic liquidity pools.",
+                    "modal_details": {
+                        "overview": "Brings traditional stock market assets onto public ledgers with instant settlement capabilities.",
+                        "problem": "Legacy financial markets operate on limited 9-to-5 market hours with multi-day settlement cycles (T+2).",
+                        "architecture": "Hybrid order matching engine off-chain with state proof submission on-chain via WebSockets for sub-second latency.",
+                        "challenges": "Managing real-time orderbook synchronization across concurrent browser clients without UI re-render jitter."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "secondary-projects",
+            "name": "Secondary Projects",
+            "type": "Structured Minimal Cards",
+            "projects": [
+                {
+                    "name": "CyberTwin",
+                    "tag": "Security / Digital Twin",
+                    "description": "Real-time network security simulation and digital twin monitoring dashboard for anomaly detection."
+                },
+                {
+                    "name": "Warranty Intelligence System",
+                    "tag": "Enterprise SaaS",
+                    "description": "OCR-driven warranty claim tracking and automated verification pipeline for electronic retail goods."
+                },
+                {
+                    "name": "Verify My Wallet",
+                    "tag": "Web3 Security",
+                    "description": "Smart contract vulnerability scanner and wallet exposure assessment tool with threat score reports."
+                }
+            ]
+        },
+        {
+            "id": "experience",
+            "name": "Experience & Leadership",
+            "type": "Timeline",
+            "items": [
+                {
+                    "role": "Technical Coordinator",
+                    "organization": "CSI-SIESGST (Computer Society of India Student Chapter)",
+                    "period": "2024 - Present",
+                    "points": [
+                        "Led technical workshops on web development and backend engineering for 200+ engineering students.",
+                        "Architected and managed student event management portals and hackathon submission systems.",
+                        "Mentored junior developers in Git workflows, React fundamentals, and API design."
+                    ]
+                },
+                {
+                    "role": "Event Head - RoboSumo",
+                    "organization": "SIESGST Techfest / Robotics Club",
+                    "period": "2024",
+                    "points": [
+                        "Directed national-level RoboSumo competition attracting 40+ engineering teams across western India.",
+                        "Designed automated tournament match-scoring software reducing delay between rounds by 50%.",
+                        "Managed technical logistics, arena specifications, and referee scoring systems."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hackathons",
+            "name": "Hackathons & Recognition",
+            "type": "Badged Cards",
+            "items": [
+                {
+                    "title": "IndiaNext 2025-26",
+                    "badge": "National Finalist",
+                    "description": "Pioneered a Web3 decentralized governance tool for municipal public data transparency."
+                },
+                {
+                    "title": "ByteCamp '26",
+                    "badge": "Top 5 Innovator",
+                    "description": "Built Neural-Ledger reconciliation prototype during a intense 36-hour hackathon sprint."
+                },
+                {
+                    "title": "iDEA 2.0 by Union Bank of India",
+                    "badge": "Special Recognition",
+                    "description": "Presented tokenized asset ledger architecture for digital banking ecosystem."
+                }
+            ]
+        },
+        {
+            "id": "certifications",
+            "name": "Certifications",
+            "type": "Placeholder Cards with View Modal",
+            "items": [
+                "AWS Certified Cloud Practitioner (Placeholder)",
+                "Meta Frontend Developer Professional Certificate",
+                "Smart Contract Security & Auditing - Cyfrin Updraft",
+                "Full Stack Web Development with Node & React - SIESGST"
+            ]
+        },
+        {
+            "id": "exploring",
+            "name": "Currently Exploring & Beyond Code",
+            "type": "Split Column",
+            "left_column": "Currently Exploring: Distributed Consensus (Raft), Solana Anchor (Rust), eBPF Linux Kernels, Event-Driven Architectures",
+            "right_column": "Beyond Code: Technical blogging, open-source contribution, hardware hacking, chess strategy"
+        },
+        {
+            "id": "contact",
+            "name": "Contact & Footer",
+            "type": "Functional Form & Footer",
+            "form_fields": [
+                "Name",
+                "Email",
+                "Subject",
+                "Message"
+            ],
+            "features": [
+                "Form validation with instant error messages",
+                "Sonner toast notification on submit ('Message sent successfully!')",
+                "Copy-to-clipboard email button (mansi.gole@siesgst.ac.in)",
+                "Social links and copyright notice in footer"
+            ]
+        }
+    ],
+    "data_testid_guidelines": {
+        "required_test_ids": [
+            "nav-brand-logo",
+            "nav-link-about",
+            "nav-link-skills",
+            "nav-link-projects",
+            "nav-link-experience",
+            "nav-link-contact",
+            "nav-resume-button",
+            "hero-view-projects-btn",
+            "hero-download-resume-btn",
+            "hero-social-github",
+            "hero-social-linkedin",
+            "hero-social-email",
+            "flagship-card-unidata",
+            "flagship-card-neural-ledger",
+            "flagship-card-nyx-equities",
+            "flagship-modal-close-btn",
+            "secondary-project-cybertwin",
+            "secondary-project-warranty",
+            "secondary-project-verify-wallet",
+            "contact-input-name",
+            "contact-input-email",
+            "contact-input-subject",
+            "contact-textarea-message",
+            "contact-submit-btn"
+        ]
+    },
+    "instructions_to_main_agent": [
+        "Ensure the app uses React and Tailwind CSS matching the precise color palette.",
+        "Import Space Grotesk, Inter, and JetBrains Mono from Google Fonts in index.css / index.html.",
+        "Implement smooth scrolling and active nav link highlighting based on section scroll position.",
+        "All cards must use background #292538 with border #494052 and text #F7F2F5.",
+        "Dusty Rose (#E9A6A6) must strictly remain a subtle accent color for buttons, badges, active indicators, and spotlight highlights.",
+        "Clicking a flagship project must open a detailed, accessible dialog/modal with case study info (Overview, Problem, Architecture, Stack, Features, Challenges).",
+        "Contact form must have input validation and trigger a Toast notification using Sonner upon submit.",
+        "Add data-testid attributes to all interactive elements according to data_testid_guidelines."
+    ]
+}
