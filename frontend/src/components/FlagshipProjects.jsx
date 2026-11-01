@@ -193,7 +193,7 @@ const ProjectShowcase = ({ project, index, onOpen }) => {
 };
 
 export const FlagshipProjects = ({ onOpen }) => (
-    <section id="projects" className="relative border-t border-line/60 bg-[#171624] py-24 sm:py-32">
+    <section id="projects" className="relative border-t border-line/60 bg-[#171624] pt-20 pb-10 sm:pt-24 sm:pb-12 lg:pt-28 lg:pb-14">
         <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
             {/* Section Heading */}
             <div className="mb-12 sm:mb-16">

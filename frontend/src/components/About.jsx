@@ -69,30 +69,50 @@ export const About = () => {
 
                             {/* Degree & College */}
                             <div className="space-y-1">
-                                <p className="font-mono-tech text-[9.5px] sm:text-[10px] uppercase tracking-[0.18em] text-txt3 font-medium">
-                                    B.TECH ECS
+                                <p className="font-mono-tech text-[10px] sm:text-[11px] uppercase tracking-[0.18em] text-txt font-semibold">
+                                    B.TECH · ELECTRONICS &amp; COMPUTER SCIENCE
                                 </p>
-                                <p className="font-mono-tech text-[9px] sm:text-[9.5px] uppercase tracking-[0.18em] leading-relaxed text-txt3/80">
-                                    SIES GRADUATE SCHOOL<br />OF TECHNOLOGY
+                                <p className="font-mono-tech text-[9.5px] sm:text-[10px] uppercase tracking-[0.18em] leading-relaxed text-txt2">
+                                    SIES GRADUATE SCHOOL OF TECHNOLOGY, NERUL
                                 </p>
+                                <p className="font-mono-tech text-[9px] sm:text-[9.5px] uppercase tracking-[0.18em] text-rose/90 font-medium">
+                                    EXPECTED GRADUATION · 2028
+                                </p>
+                            </div>
+
+                            {/* Core Coursework */}
+                            <div>
+                                <p className="font-mono-tech text-[9px] sm:text-[9.5px] uppercase tracking-[0.2em] text-txt3 font-medium mb-1.5">
+                                    CORE COURSEWORK
+                                </p>
+                                <div className="flex flex-wrap gap-1">
+                                    {["DSA", "OOP", "DBMS", "OS", "Computer Networks", "Web Tech"].map((course) => (
+                                        <span
+                                            key={course}
+                                            className="rounded border border-line/60 bg-[#1F1D36]/80 px-1.5 py-0.5 font-mono-tech text-[9px] text-txt2 transition-colors hover:border-rose/40 hover:text-rose"
+                                        >
+                                            {course}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
 
                             {/* Location */}
                             <div>
-                                <p className="font-mono-tech text-[8.5px] uppercase tracking-[0.2em] text-txt3/60 mb-1">
+                                <p className="font-mono-tech text-[9.5px] sm:text-[10px] uppercase tracking-[0.2em] text-txt3 font-medium mb-1">
                                     LOCATION
                                 </p>
-                                <p className="font-mono-tech text-[9.5px] sm:text-[10px] uppercase tracking-[0.18em] text-txt3">
+                                <p className="font-mono-tech text-[10px] sm:text-[11px] uppercase tracking-[0.18em] text-txt2">
                                     NAVI MUMBAI, INDIA
                                 </p>
                             </div>
 
                             {/* Specialization */}
                             <div>
-                                <p className="font-mono-tech text-[8.5px] uppercase tracking-[0.2em] text-txt3/60 mb-1">
+                                <p className="font-mono-tech text-[9.5px] sm:text-[10px] uppercase tracking-[0.2em] text-txt3 font-medium mb-1">
                                     SPECIALIZATION
                                 </p>
-                                <p className="font-mono-tech text-[9.5px] sm:text-[10px] uppercase tracking-[0.18em] leading-relaxed text-txt3">
+                                <p className="font-mono-tech text-[10px] sm:text-[11px] uppercase tracking-[0.18em] leading-relaxed text-txt2">
                                     FULL-STACK · BACKEND<br />
                                     WEB3 · DISTRIBUTED SYSTEMS
                                 </p>

@@ -53,7 +53,18 @@ export const Contact = () => {
             setForm(INITIAL);
         } catch (err) {
             toast.error("Couldn't send your message", {
-                description: "Please try again, or email me directly at golemansi41@gmail.com.",
+                description: (
+                    <span>
+                        Please try again, or email me directly at{" "}
+                        <a
+                            href={`mailto:${SOCIALS.email}`}
+                            className="text-rose underline underline-offset-2 transition-colors hover:text-[#f2bfbf]"
+                        >
+                            {SOCIALS.email}
+                        </a>
+                        .
+                    </span>
+                ),
             });
         } finally {
             setSending(false);
@@ -374,9 +385,12 @@ export const Footer = () => {
     const navLinks = [
         { label: "Home", href: "#", id: "home" },
         { label: "About", href: "#about", id: "about" },
+        { label: "Skills", href: "#skills", id: "skills" },
         { label: "Projects", href: "#projects", id: "projects" },
+        { label: "Experience", href: "#experience", id: "experience" },
         { label: "Hackathons", href: "#achievements", id: "achievements" },
         { label: "Contact", href: "#contact", id: "contact" },
+        { label: "Resume", href: "/assets/Mansi-Gole-Resume.pdf", isExternal: true },
     ];
 
     const handleNavClick = (e, id) => {
@@ -436,14 +450,26 @@ export const Footer = () => {
                     >
                         {navLinks.map((link, idx) => (
                             <div key={link.label} className="flex items-center gap-2 sm:gap-3">
-                                <a
-                                    href={link.href}
-                                    onClick={(e) => handleNavClick(e, link.id)}
-                                    className="font-mono-tech text-xs text-txt2 transition-colors duration-200 hover:text-rose sm:text-[13px]"
-                                    data-testid={`footer-nav-${link.label.toLowerCase()}`}
-                                >
-                                    {link.label}
-                                </a>
+                                {link.isExternal ? (
+                                    <a
+                                        href={link.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-mono-tech text-xs text-txt2 transition-colors duration-200 hover:text-rose sm:text-[13px]"
+                                        data-testid={`footer-nav-${link.label.toLowerCase()}`}
+                                    >
+                                        {link.label}
+                                    </a>
+                                ) : (
+                                    <a
+                                        href={link.href}
+                                        onClick={(e) => handleNavClick(e, link.id)}
+                                        className="font-mono-tech text-xs text-txt2 transition-colors duration-200 hover:text-rose sm:text-[13px]"
+                                        data-testid={`footer-nav-${link.label.toLowerCase()}`}
+                                    >
+                                        {link.label}
+                                    </a>
+                                )}
                                 {idx < navLinks.length - 1 && (
                                     <span
                                         className="font-mono-tech text-xs text-rose/60 select-none"

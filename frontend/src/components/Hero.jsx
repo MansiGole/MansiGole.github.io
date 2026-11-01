@@ -47,10 +47,10 @@ export const Hero = () => {
 
                             {/* Main Headline */}
                             <h1
-                                className="mt-4 font-display text-3xl xs:text-4xl sm:text-5xl lg:text-[3.1rem] xl:text-[3.35rem] font-bold leading-tight tracking-tight text-txt"
+                                className="mt-4 font-display text-4xl xs:text-5xl sm:text-6xl lg:text-[3.6rem] xl:text-[3.85rem] font-bold leading-none tracking-tight text-txt"
                                 data-testid="hero-name"
                             >
-                                Mansi Gole’s <span className="text-rose">Portfolio</span>
+                                Mansi Gole
                             </h1>
                         </motion.div>
 
@@ -60,14 +60,12 @@ export const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={getTransition(0.15, 0.7)}
                         >
-                            <p className="mt-6 font-mono-tech text-xs uppercase tracking-[0.2em] text-txt3 sm:text-sm">
-                                BUILDING SYSTEMS. SOLVING PROBLEMS. EXPLORING WHAT'S NEXT.
+                            <p className="mt-4 font-display text-lg sm:text-xl lg:text-[22px] font-semibold tracking-tight text-txt2">
+                                Full-Stack Developer <span className="text-rose font-normal">|</span> Backend &amp; Web3 Enthusiast
                             </p>
 
-                            <p className="mt-5 max-w-xl text-sm leading-relaxed text-txt2 sm:text-base">
-                                I'm an Electronics &amp; Computer Science engineering student passionate about building
-                                full-stack applications, engineering reliable backend systems and exploring emerging
-                                technologies — lately Web3 and distributed systems.
+                            <p className="mt-4 max-w-xl text-sm leading-relaxed text-txt2 sm:text-base">
+                                Electronics &amp; Computer Science engineering student building reliable backend systems, distributed architectures, and full-stack Web3 applications.
                             </p>
                         </motion.div>
 
@@ -93,7 +91,7 @@ export const Hero = () => {
                             >
                                 <FileText size={15} /> Download Resume
                             </a>
-                            <div className="flex items-center gap-2 pl-2">
+                            <div className="flex items-center gap-1.5 pl-1">
                                 {[
                                     { href: SOCIALS.github, icon: Github, label: "GitHub", testid: "hero-social-github" },
                                     { href: SOCIALS.linkedin, icon: Linkedin, label: "LinkedIn", testid: "hero-social-linkedin" },
@@ -106,7 +104,7 @@ export const Hero = () => {
                                         rel="noopener noreferrer"
                                         aria-label={label}
                                         data-testid={testid}
-                                        className="rounded-md p-2 text-txt3 transition-colors duration-200 hover:text-rose"
+                                        className="flex h-11 w-11 items-center justify-center rounded-lg text-txt3 transition-colors duration-200 hover:text-rose hover:bg-surface/30 active:scale-95"
                                     >
                                         <Icon size={18} />
                                     </a>

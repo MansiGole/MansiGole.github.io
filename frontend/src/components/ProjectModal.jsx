@@ -118,6 +118,27 @@ export const ProjectModal = ({ project, onClose }) => {
                                         </a>
                                     )}
                                 </div>
+
+                                {project.technicalSpecs && project.technicalSpecs.length > 0 && (
+                                    <div
+                                        className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-3"
+                                        data-testid="modal-technical-specs"
+                                    >
+                                        {project.technicalSpecs.map((spec) => (
+                                            <div
+                                                key={spec.label}
+                                                className="rounded-xl border border-line/70 bg-[#1F1D36]/80 p-3 shadow-sm"
+                                            >
+                                                <p className="font-mono-tech text-[10px] uppercase tracking-[0.16em] text-rose">
+                                                    {spec.label}
+                                                </p>
+                                                <p className="mt-1 font-mono-tech text-xs font-medium text-txt leading-snug">
+                                                    {spec.value}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
 
                             <Block label="Overview">

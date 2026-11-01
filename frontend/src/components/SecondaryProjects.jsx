@@ -156,7 +156,7 @@ export const SecondaryProjects = () => {
     return (
         <section
             id="more-work"
-            className="relative overflow-hidden border-t border-line/60 bg-[#171624] py-14 sm:py-18"
+            className="relative overflow-hidden border-t border-line/60 bg-[#171624] pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-18"
         >
             <div className="section-shell">
                 {/* Section Heading — Compact & Clean */}
@@ -188,7 +188,7 @@ export const SecondaryProjects = () => {
                     <button
                         type="button"
                         onClick={handlePrev}
-                        className="hidden sm:flex absolute sm:-left-5 lg:-left-7 top-1/2 -translate-y-1/2 z-40 h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-line/80 bg-[#1F1D36]/90 text-txt2 shadow-xl backdrop-blur-md transition-all duration-200 hover:border-rose hover:text-rose hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
+                        className="hidden sm:flex absolute sm:-left-5 lg:-left-7 top-1/2 -translate-y-1/2 z-40 h-11 w-11 items-center justify-center rounded-full border border-line/80 bg-[#1F1D36]/90 text-txt2 shadow-xl backdrop-blur-md transition-all duration-200 hover:border-rose hover:text-rose hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
                         aria-label="Previous project"
                         data-testid="carousel-arrow-prev"
                     >
@@ -198,7 +198,7 @@ export const SecondaryProjects = () => {
                     <button
                         type="button"
                         onClick={handleNext}
-                        className="hidden sm:flex absolute sm:-right-5 lg:-right-7 top-1/2 -translate-y-1/2 z-40 h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-line/80 bg-[#1F1D36]/90 text-txt2 shadow-xl backdrop-blur-md transition-all duration-200 hover:border-rose hover:text-rose hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
+                        className="hidden sm:flex absolute sm:-right-5 lg:-right-7 top-1/2 -translate-y-1/2 z-40 h-11 w-11 items-center justify-center rounded-full border border-line/80 bg-[#1F1D36]/90 text-txt2 shadow-xl backdrop-blur-md transition-all duration-200 hover:border-rose hover:text-rose hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
                         aria-label="Next project"
                         data-testid="carousel-arrow-next"
                     >
@@ -357,20 +357,20 @@ export const SecondaryProjects = () => {
 
                     {/* Progress Indicator Dots / Pills + Bottom Slide Arrows */}
                     <div
-                        className="mt-5 flex items-center justify-center gap-3.5"
+                        className="mt-5 flex items-center justify-center gap-3"
                         role="tablist"
                         aria-label="More Work project indicators"
                     >
                         <button
                             type="button"
                             onClick={handlePrev}
-                            className="flex h-7 w-7 items-center justify-center rounded-full border border-line/70 bg-[#292538] text-txt3 transition-all duration-200 hover:border-rose hover:text-rose active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
+                            className="flex h-11 w-11 items-center justify-center rounded-full border border-line/70 bg-[#292538] text-txt3 transition-all duration-200 hover:border-rose hover:text-rose active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
                             aria-label="Previous slide"
                         >
-                            <ChevronLeft size={13} />
+                            <ChevronLeft size={16} />
                         </button>
 
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-1">
                             {SECONDARY_PROJECTS.map((proj, idx) => {
                                 const isCurrent = idx === activeIndex;
                                 return (
@@ -378,16 +378,20 @@ export const SecondaryProjects = () => {
                                         key={proj.id}
                                         type="button"
                                         onClick={() => setActiveIndex(idx)}
-                                        className={`rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose ${
-                                            isCurrent
-                                                ? "h-1.5 w-7 bg-rose shadow-[0_0_8px_rgba(233,166,166,0.6)]"
-                                                : "h-1.5 w-2 bg-line/60 hover:bg-line"
-                                        }`}
+                                        className="group flex min-h-[44px] min-w-[28px] items-center justify-center px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
                                         aria-label={`Show ${proj.name} (Project 0${idx + 1})`}
                                         aria-selected={isCurrent}
                                         role="tab"
                                         data-testid={`indicator-${proj.id}`}
-                                    />
+                                    >
+                                        <span
+                                            className={`rounded-full transition-all duration-300 block ${
+                                                isCurrent
+                                                    ? "h-1.5 w-7 bg-rose shadow-[0_0_8px_rgba(233,166,166,0.6)]"
+                                                    : "h-1.5 w-2.5 bg-line/60 group-hover:bg-line"
+                                            }`}
+                                        />
+                                    </button>
                                 );
                             })}
                         </div>
@@ -395,10 +399,10 @@ export const SecondaryProjects = () => {
                         <button
                             type="button"
                             onClick={handleNext}
-                            className="flex h-7 w-7 items-center justify-center rounded-full border border-line/70 bg-[#292538] text-txt3 transition-all duration-200 hover:border-rose hover:text-rose active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
+                            className="flex h-11 w-11 items-center justify-center rounded-full border border-line/70 bg-[#292538] text-txt3 transition-all duration-200 hover:border-rose hover:text-rose active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose"
                             aria-label="Next slide"
                         >
-                            <ChevronRight size={13} />
+                            <ChevronRight size={16} />
                         </button>
                     </div>
                 </div>

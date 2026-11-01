@@ -163,7 +163,7 @@ export const Achievements = () => {
                                                                 ))}
 
                                                             {/* External Link Button */}
-                                                            {h.link ? (
+                                                            {h.link && (
                                                                 <a
                                                                     href={h.link}
                                                                     target="_blank"
@@ -173,14 +173,6 @@ export const Achievements = () => {
                                                                 >
                                                                     <ExternalLink size={15} />
                                                                 </a>
-                                                            ) : (
-                                                                <span
-                                                                    className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-line/40 bg-[#1F1D36]/40 text-txt3/30 cursor-default sm:h-9 sm:w-9"
-                                                                    aria-hidden="true"
-                                                                    title="Link not available"
-                                                                >
-                                                                    <ExternalLink size={15} />
-                                                                </span>
                                                             )}
                                                         </div>
                                                     </div>
